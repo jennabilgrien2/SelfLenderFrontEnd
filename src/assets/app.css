@@ -1,0 +1,31 @@
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.welcome {
+  order: 0;
+}
+
+.form {
+  order: 1;
+}
+
+@media only screen and (min-width: 935px) {
+
+  .wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .welcome {
+    flex-grow: 1;
+  }
+
+  .form {
+    flex-grow: 1;
+  }
+
+}
